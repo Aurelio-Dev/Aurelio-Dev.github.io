@@ -1,0 +1,37 @@
+.header {
+    max-width: 1200px;
+    padding: 40px 20px; /*Desgrudar o iteM*/
+    margin: 0 auto;
+    display: flex; /* item um do lado do outro */
+    justify-content: space-between; /*espaçar eles ao maximo*/
+    align-items: center; 
+}
+
+.header-menu {
+    display: flex; /* item um do lado do outro */
+    flex-wrap: wrap; /*para quebrar o item caso diminua mais que tamanho dele*/
+    gap: 10px;
+    justify-items: center; 
+}
+
+.header-menu a {
+    font-size:1.125rem;
+    line-height:1.3rem;
+    padding: 10px 20px; /*aumenta a area de clique*/
+    text-decoration: none;
+    color: #141414;
+    display: block;
+} 
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .header a {
+        background: #f5f5f5;
+        border-radius: 4px;
+    }
+}
